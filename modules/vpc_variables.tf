@@ -6,8 +6,8 @@ variable "vpc_name" {
   default     = "ecs-vpc"
 }
 
-variable "subnet_select" {
-  description = "Subnet yto Launch EC2"
+variable "subnets" {
+  description = "Subnet to Launch EC2"
   type        = string
-  default     = "public-subnet-0"
+  default     = "Public"
 }

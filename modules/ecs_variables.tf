@@ -1,7 +1,7 @@
 #Launch Configuration
 
 variable "instance_group" {
-  default     = "default"
+  default     = "docker"
   description = "The name of the instances that you consider as a group"
 }
 
@@ -26,7 +26,7 @@ variable "create_asg" {
 variable "cluster_name" {
   description = "ECS Cluster Name"
   type        = string
-  default     = "ecs-cluster"
+  default     = "ecs_cluster"
 }
 
 variable "lc_name" {
@@ -150,7 +150,7 @@ variable "cloudwatch_prefix" {
 }
 
 variable "max_size" {
-  default     = 2
+  default     = 4
   description = "Maximum size of the nodes in the cluster"
 }
 
@@ -160,7 +160,7 @@ variable "min_size" {
 }
 
 variable "desired_capacity" {
-  default     = 2
+  default     = 3
   description = "The desired capacity of the cluster"
 }
 

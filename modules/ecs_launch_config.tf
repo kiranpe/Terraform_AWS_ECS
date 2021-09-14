@@ -68,7 +68,7 @@ resource "aws_autoscaling_group" "asg" {
   desired_capacity     = var.desired_capacity
   force_delete         = true
   launch_configuration = aws_launch_configuration.this.id
-  vpc_zone_identifier  = [data.aws_subnet.filtered_subnet.id]
+  vpc_zone_identifier  = data.aws_subnet_ids.selected.ids
   load_balancers       = var.load_balancers
 
   lifecycle {
