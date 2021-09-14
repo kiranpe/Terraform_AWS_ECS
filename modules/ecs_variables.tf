@@ -32,7 +32,7 @@ variable "cluster_name" {
 variable "lc_name" {
   description = "Creates a unique name for launch configuration beginning with the specified prefix"
   type        = string
-  default     = "ecs_lc_group"
+  default     = "ecs_launch_configuration"
 }
 
 variable "instance_type" {
@@ -118,7 +118,7 @@ variable "ebs_block_device" {
     volume_size           = 8
     volume_type           = "gp2"
     device_name           = "/dev/xvdh"
-    delete_on_termination = false
+    delete_on_termination = true #Make it false in real time
   }]
 }
 
