@@ -9,7 +9,7 @@ How To Run:
 
  Clone The repo and run the terraform module.
  
-     git clone 
+     git clone https://github.com/kiranpe/Terraform_AWS_ECS.git
      terrform init
      
      To Create ECS:
@@ -23,5 +23,8 @@ Git Ref:
  You can also use git ref to Launch ECS.
  
      module "ecs" {
-       source = "git::"
+       source = "git::https://github.com/kiranpe/Terraform_AWS_ECS.git?ref=v1.0.0"
      }
+     
+Note:  Before Running ECS Configuration you need to Run VPC Configuration first. This Module have a datasource dependency on that.
+----
