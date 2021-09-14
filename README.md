@@ -10,6 +10,8 @@ How To Run:
  Clone The repo and run the terraform module.
  
      git clone https://github.com/kiranpe/Terraform_AWS_ECS.git
+     
+     To Intialize Terraform:
      terrform init
      
      To Create ECS:
