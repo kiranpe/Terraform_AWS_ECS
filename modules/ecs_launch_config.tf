@@ -2,7 +2,7 @@
 
 resource "aws_launch_configuration" "this" {
   name                        = var.lc_name
-  image_id                    = data.aws_ami.ubuntu.id
+  image_id                    = data.aws_ami.amazon2.id
   instance_type               = var.instance_type
   iam_instance_profile        = aws_iam_instance_profile.ecs_profile.arn
   key_name                    = var.key_name

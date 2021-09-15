@@ -1,11 +1,12 @@
 #AMI DataSource Configuration
 
-data "aws_ami" "ubuntu" {
+data "aws_ami" "amazon2" {
   most_recent = true
+  owners = ["591542846629"] # AWS
 
   filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+      name   = "name"
+      values = ["*amazon-ecs-optimized"]
   }
 
   filter {
@@ -13,7 +14,6 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
 }
 
 #VPC and Security Group DataSource Configuration
