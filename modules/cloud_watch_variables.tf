@@ -1,8 +1,8 @@
 #CloudWatch Alarms Variables
 
 variable "scale_up_policy_name" {
-  type = string
-  default = "ScaleUpPolicy"
+  type        = string
+  default     = "ScaleUpPolicy"
   description = "Name of the Scale Up Policy"
 }
 
@@ -31,8 +31,8 @@ variable "scale_up_policy_type" {
 }
 
 variable "scale_down_policy_name" {
-  type = string
-  default = "ScaleDownPolicy"
+  type        = string
+  default     = "ScaleDownPolicy"
   description = "Name of the Scale Down Policy"
 }
 

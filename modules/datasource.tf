@@ -2,11 +2,11 @@
 
 data "aws_ami" "amazon2" {
   most_recent = true
-  owners = ["591542846629"] # AWS
+  owners      = ["591542846629"] # AWS
 
   filter {
-      name   = "name"
-      values = ["*amazon-ecs-optimized"]
+    name   = "name"
+    values = ["*amazon-ecs-optimized"]
   }
 
   filter {

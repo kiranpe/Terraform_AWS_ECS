@@ -71,7 +71,7 @@ locals {
       treat_missing_data        = "missing"
       ok_actions                = []
       insufficient_data_actions = []
-    } 
+    }
   }
 
   all_alarms = local.ec2_alarms
