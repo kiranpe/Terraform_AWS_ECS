@@ -1,4 +1,4 @@
-# Launch configuration
+#AutoScaling Group Launch configuration
 
 resource "aws_launch_configuration" "this" {
   name                        = var.lc_name
@@ -59,7 +59,7 @@ data "template_file" "user_data" {
   }
 }
 
-# Autoscaling group
+#Autoscaling Group Configuration
 
 resource "aws_autoscaling_group" "asg" {
   name                 = "${var.environment}_${var.cluster_name}_${var.instance_group}"

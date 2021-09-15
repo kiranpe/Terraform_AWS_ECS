@@ -16,7 +16,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-#Other DataSource Configuration
+#VPC and Security Group DataSource Configuration
 
 data "aws_vpc" "vpc" {
   tags = {

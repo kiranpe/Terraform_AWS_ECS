@@ -1,3 +1,5 @@
+#ECS IAM Role and Policy Configuration
+
 resource "aws_iam_role" "ecs_autoscalling_group_role" {
   name               = var.role_name
   assume_role_policy = file("${path.module}/templates/assumerolepolicy.json")
